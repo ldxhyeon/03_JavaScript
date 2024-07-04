@@ -44,7 +44,7 @@ function test() {
 
   // pw : 입력 받은 값
   // password : 전역 변수 ("1234")
-  if(pw !== password) {// 입력된 비밀번호가 password와 같지 않다면
+  if(pw !== password) {  // 입력된 비밀번호가 password와 같지 않다면
     alert("비밀번호 불일치");
     return;
   }
