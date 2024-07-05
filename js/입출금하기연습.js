@@ -108,6 +108,7 @@ function withdrawal() {
     alert(`${num1}원이 출금 되었습니다. 남은 잔액 : ${balance}원`);
     amount.value = '';
     return;
+
   
 } 
 
