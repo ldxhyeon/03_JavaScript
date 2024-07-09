@@ -15,6 +15,7 @@ function check1() {
   }
 }
 
+
 function check2() {
 
   for(let num = 1; num <= 10; num++ ) {
@@ -65,10 +66,19 @@ function check6() {
 
 }
 
-function check7() {
 
-  for(let num = 3; num <= 30; num+=3) {
-    console.log(num);
+
+// function check7() {
+
+//   for(let num = 3; num <= 30; num+=3) {
+//     console.log(num);
+//   }
+// }
+
+
+function check7(){
+  for(let i = 3; i <=30; i+=3) {
+    console.log(i);
   }
 }
 
@@ -87,28 +97,64 @@ function check8() {
 
 }
 
-/* 입력 받은 범위 내 지정된 배수 출력 / 합계 구하기 */
-function check9() {
+// //  다른 방식의 풀이
+// function check8() {
+  
+//   let sum = 0;
 
+//   for(let i = 4; i <=20; i+=4) {
+//     console.log(i);
+//     sum += i;
+//   }
+//   console.log("합계 : ", sum);
+// } 
+
+
+
+// /* 입력 받은 범위 내 지정된 배수 출력 / 합계 구하기 */
+// function check9() {
+
+//   const start9 = document.getElementById("start9");
+//   const end9 = document.getElementById("end9");
+//   const multiple9 = document.getElementById("multiple9");
+
+//   // input 요소에 작성된 값을 얻어와 숫자로 변환해서 저장
+//   const s = Number(start9.value);
+//   const e = Number(end9.value);
+//   const m = Number(multiple9.value);
+
+
+//   let sum = 0;
+
+//   for(let num = s; num <= e; num++ ) {
+//     if(num % m === 0) {
+//       console.log(num);
+//       sum += num;
+//     }
+//   }
+//   console.log("합계 :", sum);
+// }
+
+
+function check9() {
   const start9 = document.getElementById("start9");
   const end9 = document.getElementById("end9");
   const multiple9 = document.getElementById("multiple9");
 
-  // input 요소에 작성된 값을 얻어와 숫자로 변환해서 저장
-  const s = Number(start9.value);
-  const e = Number(end9.value);
-  const m = Number(multiple9.value);
+   const startnum1 = Number(start9.value);
+   const endnum2 = Number(end9.value);
+   const mutiplenum3 = Number(multiple9.value);
+
+   let sum = 0;
 
 
-  let sum = 0;
 
-  for(let num = s; num <= e; num++ ) {
-    if(num % m === 0) {
-      console.log(num);
-      sum += num;
-    }
-  }
-  console.log("합계 :", sum);
+   for(let num = startnum1; num <= endnum2; num += mutiplenum3) {
+    console.log(num);
+    sum += num;
+   }
+
+   console.log("합계 : ", sum);
 }
 
 
@@ -138,36 +184,62 @@ function check10() {
   }
 }
 
+
+
+// check10 다른 방식의 풀이
+// function check10() {
+
+//   const dan = document.getElementById("dan");
+
+//   const num = Number(dan.value);
+
+//   if(num < 2 || num > 9)  {
+//     alert("2~9사이 숫자를 입력해주세요.");
+//   }
+
+
+//   for(let row = 1; row <= 9; row++) {
+//     let sum = num * row;
+//     console.log(`${num} X ${row} = ${sum}`);
+//   }
+ 
+// }
+
+
+
+
 function check11() {
   for(let i = 10; i >= 1; i--) {
     console.log(i);
   }
 }
 
-function check12() {
 
-  const input = document.getElementById("dan12");
 
-  let sum = 0;
+// function check12() {
 
-  // 단이 입력되지 않은 경우
-  if(input.value.length === 0) {
-    alert("단을 입력해 주세요.")
-    return;
-  }
+//   const input = document.getElementById("dan12");
 
-  const dan = Number(input.value);
+//   let sum = 0;
 
-  // 단이 2~9 사이가 아닌 경우
-  if(dan < 2 || dan > 9 ) {
-    alert("2~9 사이 숫자를 입력해 주세요.");
-    return;
-  }
+//   // 단이 입력되지 않은 경우
+//   if(input.value.length === 0) {
+//     alert("단을 입력해 주세요.")
+//     return;
+//   }
+
+//   const dan = Number(input.value);
+
+//   // 단이 2~9 사이가 아닌 경우
+//   if(dan < 2 || dan > 9 ) {
+//     alert("2~9 사이 숫자를 입력해 주세요.");
+//     return;
+//   }
     
-  for(let num = 9; num >= 1; num--) {
-    console.log(`${dan} X ${num}`);
-  }
-}
+//   for(let num = 9; num >= 1; num--) {
+//     console.log(`${dan} X ${num}`);
+//   }
+// }
 
 
 function check13() {
