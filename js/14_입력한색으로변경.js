@@ -39,6 +39,8 @@ changeBtn.addEventListener("click", function(){
 
 
 
+
+
 /* 
   input 관련 요소에 작성된 값 -> value
 
