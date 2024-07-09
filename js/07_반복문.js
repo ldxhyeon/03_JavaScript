@@ -527,3 +527,5 @@ function check24() {
 
 
 }
+
+//  복습
