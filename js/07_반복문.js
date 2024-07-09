@@ -242,48 +242,60 @@ function check11() {
 // }
 
 
-function check13() {
-
-  const input13 = document.getElementById("input13");
-  const output13 = document.getElementById("output13");
-  const result = document.getElementById("result13");
-
-  const multiple = Number(input13.value);
-
-  const shape = output13.value;
-
-  let str = '';
-
-  for(let num = 1; num <= 20; num++) {
-
-    if(num % multiple === 0) {
-      // console.log(shape);
-      str += `${shape} `
-    }else {
-      // console.log(num);
-      str += `${num} `;
-    }
-
-    // num === 10일때 줄을 변경하는 <br>추가
-    if(num === 10)
-    str += "<br>";
-
-  }
-
-  result.innerHTML = str
-}
-
 
 // function check13() {
+
 //   const input13 = document.getElementById("input13");
 //   const output13 = document.getElementById("output13");
+//   const result = document.getElementById("result13");
 
-//   const num1 = Number(input13.value);
+//   const multiple = Number(input13.value);
 
+//   const shape = output13.value;
 
+//   let str = '';
 
-//   console.log(num1);
+//   for(let num = 1; num <= 20; num++) {
+
+//     if(num % multiple === 0) {
+//       // console.log(shape);
+//       str += `${shape} `
+//     }else {
+//       // console.log(num);
+//       str += `${num} `;
+//     }
+
+//     // num === 10일때 줄을 변경하는 <br>추가
+//     if(num === 10)
+//     str += "<br>";
+
+//   }
+
+//   result.innerHTML = str
 // }
+
+function check13() {
+  const input13 = document.getElementById("input13");
+
+  const output13 = document.getElementById("output13");
+
+  const result = document.getElementById("result13");
+
+  let str = '';
+  
+  const dan = Number(input13.value);
+
+  for(let i = 1; i <= 20; i++) {
+    console.log(i);
+    str += i;
+  }
+
+  result.innerHTML = str;
+
+
+}
+
+    
 
 
 /* 다음 모영 출력하기
