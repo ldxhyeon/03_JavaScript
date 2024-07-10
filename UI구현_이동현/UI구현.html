@@ -9,60 +9,109 @@
   <link rel="stylesheet" href="UI구현.css">
 </head>
 <body>
-  <h1>UI구현_이동현!</h1>
+ 
 
+  <main>
+    <h1>UI구현_이동현!</h1>
+    <br>
+    <hr>
 
+    <div class="section">
 
+      <div class="section-box">
+        <div>
+          너비 :&nbsp;<input type="number" class="box-width">&nbsp;
+          <span>px</span>
+        </div>
+      </div>
 
+      <div class="section-box">
+        <div>
+          높이 :&nbsp;<input type="number" class="box-height">&nbsp;
+          <span>px</span>
+        </div>
+      </div>
 
-<!-- <div class="key-container">
-  <div class="key-box">
-    <div class="key-value">Q</div>
-    <div class="key-value">W</div>
-    <div class="key-value">E</div>
-    <div class="key-value">R</div>
-  </div>
-</div>
- -->
-
- <main>
-
-  <section class="color-area">
-
-    <div class="container">
-      <div class="box"></div>
-      <input type="text" class="color-input">
-    </div>
-    <div class="container">
-      <div class="box"></div>
-      <input type="text" class="color-input">
-    </div>
-    <div class="container">
-      <div class="box"></div>
-      <input type="text" class="color-input">
-    </div>
-    <div class="container">
-      <div class="box"></div>
-      <input type="text" class="color-input">
-    </div>
-    <div class="container">
-      <div class="box"></div>
-      <input type="text" class="color-input">
     </div>
 
-  </section>
 
-  <div>
-    <h4>투명도</h4>
-    0.25 <input type="radio" name="opacity-btn" value="0.25">
-    0.5  <input type="radio" name="opacity-btn" value="0.5">
-    0.75 <input type="radio" name="opacity-btn" value="0.75">
-    1    <input type="radio" name="opacity-btn" value="1">
-  </div>
+    <div class="section">
 
-  <button id="changeButton">색상 변경</button>
+      <div class="section-box">
+        <div>
+          글자크기 :&nbsp;<input type="number" class="box-font">&nbsp;
+          <span>px</span>
+        </div>
+      </div>
 
- </main>
+      <div class="section-box">
+        <div>
+          
+         <span>굵기 :&nbsp;굵게&nbsp;
+            <input type="radio" class="box-radio"  name="font-weight" value="bold">&nbsp;&nbsp;&nbsp;
+          </span>
+          <span>보통
+            <input type="radio" class="box-radio" name="font-weight" value="normal">
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <div class="section-box">
+        <div>글자색 :&nbsp;
+          <input type="text" class="font-color">&nbsp;
+        </div>
+      </div>
+
+      <div class="section-box">
+        <div>배경색 :&nbsp;
+          <input type="text" class="box-background">&nbsp;
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div>가로정렬 :&nbsp;
+        <input type="radio" name="width-radio" value="start" class="radio-Width">&nbsp;
+        <span>왼쪽</span>  
+        <input type="radio" name="width-radio" value="center" class="radio-Width">&nbsp;
+        <span>가운데</span>  
+        <input type="radio" name="width-radio" value="end" class="radio-Width">&nbsp;
+        <span>오른쪽</span>  
+      </div>
+    </div>
+
+    <div class="section">
+      <div>세로정렬 :&nbsp;
+        <input type="radio" name="height-radio" value="start" class="radioHeight">&nbsp;
+        <span>위</span>  
+        <input type="radio" name="height-radio" value="center" class="radioHeight">&nbsp;
+        <span>가운데</span>  
+        <input type="radio" name="height-radio" value="end" class="radioHeight">&nbsp;
+        <span>아래</span>  
+      </div>
+    </div>
+
+    <div class="section-vlaue">
+      출력문자열 :&nbsp;<input type="text" style="width: 60%;" class="inp-massage">
+    </div>
+
+    <button class="changeBtn" style="margin-top: 20px;">적용하기</button>
+
+    <div class="result-box"></div>
+
+  </main>
+
+
+
+
+
+
 
 
 

@@ -1,67 +1,104 @@
 
-// const key = document.querySelectorAll(".key-value");
+const boxWidth = document.querySelector(".box-width");
 
+const boxHeight = document.querySelector(".box-height");
 
-// document.addEventListener("keydown",function(e){
+const changeBtn = document.querySelector(".changeBtn");
 
-//   let index;
+const resultBox = document.querySelector(".result-box");
 
-//   switch(e.key.toLowerCase()) {
-//     case 'q' : index = 0; break;
-//     case 'w' : index = 1; break;
-//     case 'e' : index = 2; break;
-//     case 'r' : index = 3; break;
-//   }
-//   key[index].style.backgroundColor = 'pink';
-// });
+const fontSize = document.querySelector(".box-font");
 
+const boxBackground = document.querySelector(".box-background");
 
-// document.addEventListener("keyup",function(e){
+const messageInput  = document.querySelector(".inp-massage");
 
-//   let index;
-
-//   switch(e.key.toLowerCase()) {
-//     case 'q' : index = 0; break;
-//     case 'w' : index = 1; break;
-//     case 'e' : index = 2; break;
-//     case 'r' : index = 3; break;
-//   }
-
-//   key[index].style.backgroundColor = 'white';
-// });
+const fontColor = document.querySelector(".font-color");
 
 
 
 
-
-
-
-
-
-
-const coInput = document.querySelectorAll(".color-input");
-const boxs = document.querySelectorAll(".box");
-
-const changeBtn = document.querySelector("#changeButton");
 
 changeBtn.addEventListener("click", function(){
 
-  const checkBtn =  document.querySelector("[name = opacity-btn]:checked");
+  const widthValue = boxWidth.value;
+  const heightValue = boxHeight.value;
+  const sizeValue = fontSize.value;
+  const backgroundColor = boxBackground.value;
+  const massage = messageInput.value;
+  const colorValue = fontColor.value;
 
-  let op;
-  if(checkBtn == null) {
-    op = 1;
+  let radioFont = document.querySelector('input[name="font-weight"]:checked');
+  const defaultFontWeight = 'normal'; // 기본값으로 설정할 폰트 굵기
+
+  let wid = document.querySelector('input[name="width-radio"]:checked');
+  const defalutWidth = 'center';
+
+  let hei = document.querySelector('input[name="height-radio"]:checked');
+  const defalutHeight = 'center';
+
+  if(!radioFont) {
+    alert("폰트 굵기 선택이 없습니다. 기본값으로 설정합니다.");
+    radioFont = defaultFontWeight; 
   }else {
-    op = checkBtn.value;
-  }
+    radioFont = radioFont.value; 
+  };
 
-  for(let i = 0; i < boxs.length; i++) {
+  if(!wid) {
+    alert("가로 정렬 선택이 없습니다. 기본값으로 가운데로 설정합니다.");
+    wid = defalutWidth; 
+  }else {
+    wid = wid.value; 
+  };
 
-    boxs[i].style.backgroundColor = coInput[i].value
+  if(!hei) {
+    alert("세로 정렬 선택이 없습니다. 기본값으로 가운데로 설정합니다.");
+    hei = defalutHeight; 
+  }else {
+    hei = hei.value; 
+  };
 
-    boxs[i].style.opacity = op;
-  }
+
+  resultBox.style.width = widthValue + 'px';
+  resultBox.style.height = heightValue + 'px';
+  resultBox.style.backgroundColor = backgroundColor;
+  resultBox.innerText = massage;
+  resultBox.style.fontSize = sizeValue + 'px';
+  resultBox.style.color = colorValue;
+  resultBox.style.fontWeight = radioFont;
+  resultBox.style.justifyContent = wid;
+  resultBox.style.alignItems = hei;
+  
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
