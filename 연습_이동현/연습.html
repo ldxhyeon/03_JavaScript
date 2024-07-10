@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="연습.css">
+</head>
+<body>
+    
+  <table>
+
+    <tr>
+      <th>너비 :</th>
+      <td>
+        <input type="number" class="box-width">
+      </td>
+      <td colspan="3">&nbsp;px</td>
+      <!-- <td></td>
+      <td></td> -->
+      <th>높이 :</th>
+      <td>
+        <input type="number" class="box-height">
+      </td>
+      <td>&nbsp;px</td>
+    </tr>
+
+    <tr>
+      <th>글자크기 :</th>
+      <td>
+        <input type="number" class="font-size">
+      </td>
+      <td colspan="3">&nbsp;px</td>
+      <!-- <td></td>
+      <td></td> -->
+      <th>굵기 :</th>
+      
+      <td>
+        보통<input type="radio" name="inp-radio" value="normal" class="font-weight">&nbsp;&nbsp;&nbsp;
+        굵게<input type="radio" name="inp-radio" value="bold" class="font-weight">
+      </td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <th>글자색 :</th>
+      <td colspan="4">
+        <input type="text" style="width: 95%;" class="font-color">
+      </td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <th>배경색 :&nbsp;</th>
+      <td colspan="2">
+        <input type="text" style="width: 95%;" class="box-background">
+      </td>
+      <!-- <td></td> -->
+    </tr>
+
+    <tr>
+      <th>가로정렬 :</th>
+      <td colspan="7">
+        왼쪽&nbsp;<input type="radio" input type="radio" name="horizontal-radio" value="flex-start" class="radio-Width">
+        가운데&nbsp;<input type="radio" input type="radio" name="horizontal-radio" value="center" class="radio-Width">
+        오른쪽&nbsp;<input type="radio" input type="radio" name="horizontal-radio" value="flex-end" class="radio-Width">
+      </td>
+      <!-- <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td> </td>
+      <td></td> -->
+    </tr>
+
+    <tr>
+      <th>세로정렬 :</th>
+      <td colspan="7">
+        위&nbsp;<input type="radio" input type="radio" name="Vertical-radio" value="flex-start" class="radio-Width">
+        가운데&nbsp;<input type="radio" input type="radio" name="Vertical-radio" value="center" class="radio-Width">
+        아래&nbsp;<input type="radio" input type="radio" name="Vertical-radio" value="flex-end" class="radio-Width">
+      </td>
+      <!-- <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> -->
+    </tr>
+
+    <tr>
+      <th>출력문자열 :&nbsp;</th>
+      <td colspan="7">
+        <input text="text" style="width: 100%;" class="box-output">
+      </td>
+      <!-- <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> -->
+    </tr>
+
+  </table>
+
+  <button class="change-btn">적용하기</button>
+
+  <div class="result-box">
+    
+  </div>
+
+  
+  <script src="연습.js"></script>
+</body>
+</html>

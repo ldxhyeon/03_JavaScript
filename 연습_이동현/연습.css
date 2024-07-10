@@ -1,0 +1,31 @@
+ * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+      flex-direction: column;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    table, td {
+      min-width: 50px;
+      height: 30px;
+    }
+
+    .change-btn {
+      margin-top: 20px;
+    }
+
+    .result-box {
+      display: flex;
+      border: 3px solid #333;
+      margin-top: 20px;
+    }
