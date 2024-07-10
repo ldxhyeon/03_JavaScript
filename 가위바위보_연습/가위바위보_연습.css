@@ -11,77 +11,131 @@ body {
   justify-content: center;
 }
 
-.container {
-  width: 810px;
-  height: 500px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
 .main-box {
-  width: 350px;
-  margin: 10px;
-  /* border: 1px solid black; */
+  width: 800px;
+  height: 500px;
+  display: flex;
+  
 }
 
-.main-box > div {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
+.section1, .section3, .section4 {
+  width: 100%;
+  height: 100%;
 }
 
+.section2 {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.main-box > div > img {
+.section1 img, .section3 img {
   width: 100%;
   margin-top: 10px;
-
+  border: 1px solid black;
 }
 
-.text-box {
+.section1, .section3 {
   display: flex;
-}
-
-.text-box  > div{
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  text-align: center;
+}
+
+.btn-box {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.btn-box2 {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+
+.btn-box > button {
+  width: 30%;
   flex-grow: 1;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0 0 15px;
   border-radius: 10px;
+  margin: 5px;
+  background-color: white;
   cursor: pointer;
 }
 
-.text-box  > div:hover{
-  background: #ebcc66;
-  color: rgb(143, 57, 255);
+.btn-box2 > button {
+  width: 30%;
+  flex-grow: 1;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
 }
 
-.side-menu {
-  width: 300px;
-  height: 100%;
+.btn-box > button:hover {
+  background-color: bisque;
+  color :rgb(203, 152, 253);
+}
+
+.btn-box2 > button:hover {
+  background-color: rgb(203, 152, 253);
+  color :bisque;
+}
+
+.section4 > table {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
   border: 1px solid black;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  border-collapse: collapse;
 }
 
-.side-menu > div {
-  width: 80%;
-  height: 30px;
-  font-weight: bold;
+.section4 th, .section4 td {
+  border: 1px solid black; 
+}
+
+table > tr, td {
+  border: 1px solid black;
+}
+
+.section4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  border-left: 1px solid black;
+  margin-left: 10px;
+}
+
+.section4 > h3 {
   display: flex;
   text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
 }
 
+.text-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text-box  > span {
+  width: 100%;
+  margin: 5px;
+}
 
 
 

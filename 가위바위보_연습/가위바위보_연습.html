@@ -9,41 +9,70 @@
 </head>
 <body>
   
-  <main class="container">
+  <main class="main-box">
 
-    <div class="main-box">
-      <div>USER</div>
-      <div class="img-box">
-        <img src="./images/가위L.png" style="border: 1px solid black;">
+    <div class="section1">
+      <h2>USER</h2>
+      <img src="./images/가위L.png">
+      <div class="btn-box">
+        <button class="scissors"><h2>가위</h2></button>
+        <button class="rock"><h2>바위</h2></button>
+        <button class="Paper"><h2>보</h2></button>
       </div>
+    </div>
+
+    <div class="section2">
+       <h2>VS</h2>
+    </div>
+
+    <div class="section3">
+      <h2>COM</h2>
+      <img src="./images/가위R.png">
+      <div class="btn-box2">
+        <button class="gameStartBtn"><h2>GAME START</h2></button>
+      </div>
+    </div>
+
+    <div class="section4">
+       <h3>USER VS COM</h3>
+
+       <table>
+        <tr>
+          <th>승</th>
+          <th>무</th>
+          <th>무</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+       </table>
+
+       <div class="text-box">
+        <span style="color:green; font-weight: bold;">WIN</span>
+        <span>가위</span>
+        <span>VS</span>
+        <span>보</span>
+      </div>
+
       <div class="text-box">
-        <div style="border:1px solid black; margin: 20px 0 0 0;">가위</div>
-        <div style="border:1px solid black;">바위</div>
-        <div style="border:1px solid black;">보</div>
+        <span style="color:red; font-weight: bold;">LOSE</span>
+        <span>바위</span>
+        <span>VS</span>
+        <span>보</span>
       </div>
-    </div>
 
-    <div style="font-weight: bold;">VS</div>
-
-    <div class="main-box">
-      <div>USER</div>
-      <div class="img-box">
-        <img src="./images/가위R.png" style="border: 1px solid black;">
-      </div>
       <div class="text-box">
-        <div style="border:1px solid black; margin: 20px 0 0 0;">GAME START</div>
+        <span style="color:blue; font-weight: bold;">DRAW</span>
+        <span>보</span>
+        <span>VS</span>
+        <span>보</span>
       </div>
     </div>
-
-    <div class="side-menu">
-      <div style="border: 1px solid black;">USER VS COM</div>
-    </div>
-
-    
 
 
   </main>
-
 
 
   <script src = "/가위바위보_연습/가위바위보_연습.js"></script>
