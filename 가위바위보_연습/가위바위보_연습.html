@@ -8,16 +8,21 @@
   <link rel="stylesheet" href="/가위바위보_연습/가위바위보_연습.css">
 </head>
 <body>
-  
-  <div class="section1">
-    <h2>USER</h2>
-    <img src="./images/가위L.png">
-    <div class="btn-box">
-      <button class="scissors">가위</button>
-      <button class="rock">바위</button>
-      <button class="Paper">보</button>
+
+  <main class="main-box">
+
+    <div class="section1">
+      <h2>USER</h2>
+      <div class="img-box">
+        <img id="user" src="./images/가위L.png">
+      </div>
+      <div class="btn-box">
+        <!-- 여기 클래스 명 변경부터 시작 -->
+        <button class="scissors">가위</button> 
+        <button class="rock">바위</button>
+        <button class="Paper">보</button>
+      </div>
     </div>
-  </div>
 
     <div class="section2">
        <h2>VS</h2>
@@ -25,7 +30,9 @@
 
     <div class="section3">
       <h2>COM</h2>
-      <img src="./images/가위R.png">
+      <div class="img-box">
+        <img id="com" src="./images/바위R.png">
+      </div>
       <div class="btn-box2">
         <button class="gameStartBtn">GAME START</button>
       </div>
@@ -41,9 +48,9 @@
           <th>무</th>
         </tr>
         <tr>
-          <th>1</th>
-          <th>1</th>
-          <th>1</th>
+          <th class="playCount">1</th>
+          <th class="playCount">1</th>
+          <th class="playCount">1</th>
         </tr>
        </table>
 
@@ -68,7 +75,6 @@
         <span>보</span>
       </div>
     </div>
-
 
   </main>
 

@@ -1,9 +1,9 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   /* border: 1px solid black; */
-}
+/* } */
 
 body {
   min-height: 100vh;
@@ -19,6 +19,7 @@ body {
   
 }
 
+
 .section1, .section3, .section4 {
   width: 100%;
   height: 100%;
@@ -33,10 +34,18 @@ body {
   justify-content: center;
 }
 
+.img-box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section1 img, .section3 img {
   width: 100%;
-  margin-top: 10px;
-  border: 1px solid black;
+  /* height 값 넣으면 이미지 alt 안없어짐 */
 }
 
 .section1, .section3 {
