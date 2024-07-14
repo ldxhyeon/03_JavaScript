@@ -152,11 +152,18 @@ table > tr, td {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
-  margin-top: 15px;
 }
 
-.text-box  > span {
+.text-box > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.text-box  > div > span {
   width: 100%;
   margin: 5px;
 }

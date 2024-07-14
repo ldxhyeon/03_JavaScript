@@ -18,9 +18,9 @@
       </div>
       <div class="btn-box">
         <!-- 여기 클래스 명 변경부터 시작 -->
-        <button class="scissors">가위</button> 
-        <button class="rock">바위</button>
-        <button class="Paper">보</button>
+        <button class="gameResult">가위</button> 
+        <button class="gameResult">바위</button>
+        <button class="gameResult">보</button>
       </div>
     </div>
 
@@ -45,35 +45,56 @@
         <tr>
           <th>승</th>
           <th>무</th>
-          <th>무</th>
+          <th>패</th>
         </tr>
         <tr>
-          <th class="playCount">1</th>
-          <th class="playCount">1</th>
-          <th class="playCount">1</th>
+          <th class="playCount">0</th>
+          <th class="playCount">0</th>
+          <th class="playCount">0</th>
         </tr>
        </table>
 
        <div class="text-box">
-        <span style="color:green; font-weight: bold;">WIN</span>
-        <span>가위</span>
-        <span>VS</span>
-        <span>보</span>
+        <div>
+          <span style="color:green; font-weight: bold;">WIN</span>
+          <span>가위</span>
+          <span>VS</span>
+          <span>보</span>
+        </div>
+
+        <div>
+          <span style="color:red; font-weight: bold;">LOSE</span>
+          <span>바위</span>
+          <span>VS</span>
+          <span>보</span>
+        </div>
+
+        <div>
+          <span style="color:blue; font-weight: bold;">DRAW</span>
+          <span>보</span>
+          <span>VS</span>
+          <span>보</span>
+        </div>
+      </div>
+
+      <!-- <div class="text-box">
+        <div>
+          <span style="color:red; font-weight: bold;">LOSE</span>
+          <span>바위</span>
+          <span>VS</span>
+          <span>보</span>
+        </div>
       </div>
 
       <div class="text-box">
-        <span style="color:red; font-weight: bold;">LOSE</span>
-        <span>바위</span>
-        <span>VS</span>
-        <span>보</span>
-      </div>
+        <div>
+          <span style="color:blue; font-weight: bold;">DRAW</span>
+          <span>보</span>
+          <span>VS</span>
+          <span>보</span>
+        </div>
+      </div> -->
 
-      <div class="text-box">
-        <span style="color:blue; font-weight: bold;">DRAW</span>
-        <span>보</span>
-        <span>VS</span>
-        <span>보</span>
-      </div>
     </div>
 
   </main>

@@ -25,7 +25,7 @@ const choice = ["가위", "바위", "보"];
 
 
 /* GAME START 버튼 클릭 시 */
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {  
 
   maxCount = prompt("진행할 판 수를 입력하세요");
 
